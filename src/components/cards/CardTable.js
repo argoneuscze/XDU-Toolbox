@@ -9,6 +9,8 @@ import {
   Paper,
   makeStyles
 } from "@material-ui/core";
+import GearData from "../../data/gear_data.json";
+import CardRow from "./CardRow.js";
 
 const useStyles = makeStyles({
   table: {
@@ -24,17 +26,21 @@ const CardTable = () => {
       <Table className={classes.table}>
         <TableHead>
           <TableRow>
-            <TableCell>head1</TableCell>
-            <TableCell>head2</TableCell>
+            <TableCell>ID</TableCell>
+            <TableCell>Attribute</TableCell>
+            <TableCell>Name</TableCell>
+            <TableCell>Skill</TableCell>
+            <TableCell>Max. HP</TableCell>
+            <TableCell>Max. Attack</TableCell>
+            <TableCell>Max. Defense</TableCell>
+            <TableCell>Skill #1</TableCell>
+            <TableCell>Skill #2</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          <TableRow>
-            <TableCell component="th" scope="row">
-              th
-            </TableCell>
-            <TableCell>body</TableCell>
-          </TableRow>
+          {Object.keys(GearData).map(key => (
+            <CardRow key={key} id={key} data={GearData[key]} />
+          ))}
         </TableBody>
       </Table>
     </TableContainer>
