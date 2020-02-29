@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9889b7a9a825f74f6ecd5eb5ebda9c16",
+    "revision": "6a5744d940b70c6cb55dcf921e6ac42f",
     "url": "/xdu-toolbox/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/xdu-toolbox/static/js/2.4ebf1c9a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee7f7c5cc6a4c5190099",
-    "url": "/xdu-toolbox/static/js/main.dc05775e.chunk.js"
+    "revision": "8b8c66c85b9f9d2ddf73",
+    "url": "/xdu-toolbox/static/js/main.df736507.chunk.js"
   },
   {
     "revision": "fbb6a29ab29d652b1bc5",
