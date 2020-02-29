@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/xdutoolbox/static/js/main.feb96248.chunk.js",
-    "main.js.map": "/xdutoolbox/static/js/main.feb96248.chunk.js.map",
-    "runtime-main.js": "/xdutoolbox/static/js/runtime-main.a50fa830.js",
-    "runtime-main.js.map": "/xdutoolbox/static/js/runtime-main.a50fa830.js.map",
-    "static/js/2.4ebf1c9a.chunk.js": "/xdutoolbox/static/js/2.4ebf1c9a.chunk.js",
-    "static/js/2.4ebf1c9a.chunk.js.map": "/xdutoolbox/static/js/2.4ebf1c9a.chunk.js.map",
-    "index.html": "/xdutoolbox/index.html",
-    "precache-manifest.e772c5a762d0f17bd01a718fb6bfc02e.js": "/xdutoolbox/precache-manifest.e772c5a762d0f17bd01a718fb6bfc02e.js",
-    "service-worker.js": "/xdutoolbox/service-worker.js",
-    "static/js/2.4ebf1c9a.chunk.js.LICENSE.txt": "/xdutoolbox/static/js/2.4ebf1c9a.chunk.js.LICENSE.txt"
+    "main.js": "/xdu-toolbox/static/js/main.dc05775e.chunk.js",
+    "main.js.map": "/xdu-toolbox/static/js/main.dc05775e.chunk.js.map",
+    "runtime-main.js": "/xdu-toolbox/static/js/runtime-main.d7535494.js",
+    "runtime-main.js.map": "/xdu-toolbox/static/js/runtime-main.d7535494.js.map",
+    "static/js/2.4ebf1c9a.chunk.js": "/xdu-toolbox/static/js/2.4ebf1c9a.chunk.js",
+    "static/js/2.4ebf1c9a.chunk.js.map": "/xdu-toolbox/static/js/2.4ebf1c9a.chunk.js.map",
+    "index.html": "/xdu-toolbox/index.html",
+    "precache-manifest.42cef57969fc42a94df275ec6e725421.js": "/xdu-toolbox/precache-manifest.42cef57969fc42a94df275ec6e725421.js",
+    "service-worker.js": "/xdu-toolbox/service-worker.js",
+    "static/js/2.4ebf1c9a.chunk.js.LICENSE.txt": "/xdu-toolbox/static/js/2.4ebf1c9a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a50fa830.js",
+    "static/js/runtime-main.d7535494.js",
     "static/js/2.4ebf1c9a.chunk.js",
-    "static/js/main.feb96248.chunk.js"
+    "static/js/main.dc05775e.chunk.js"
   ]
 }
