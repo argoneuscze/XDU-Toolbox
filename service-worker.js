@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/xdutoolbox/precache-manifest.0641ff81bb6ac1c79c87d9aba16e323a.js"
+  "/xdutoolbox/precache-manifest.e772c5a762d0f17bd01a718fb6bfc02e.js"
 );
 
 self.addEventListener('message', (event) => {
