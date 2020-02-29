@@ -43,7 +43,11 @@ const columns = [
     lookup: getCharLookups()
   },
   { title: "Skill Name", field: "skill_name" },
-  { title: "Rarity", field: "helpers.rarity_str", filtering: false },
+  {
+    title: "Rarity",
+    field: "helpers.rarity_str",
+    lookup: { "3☆": "3☆", "4☆": "4☆", "5☆": "5☆" }
+  },
   { title: "Attribute", field: "attribute", lookup: getAttributeLookups() },
   { title: "Max. HP", field: "helpers.max_hp", filtering: false },
   { title: "Max. Attack", field: "helpers.max_attack", filtering: false },
