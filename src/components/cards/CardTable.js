@@ -2,10 +2,11 @@ import React from "react";
 import GearData from "../../data/gear_data.json";
 import MaterialTable from "material-table";
 import { ATTRIBUTES } from "../../utilities/constants.js";
+import CardDetail from "./CardDetail.js";
 
 const gearNameSet = new Set();
 
-const data = Object.entries(GearData).map(([key, value]) => {
+const tableData = Object.entries(GearData).map(([key, value]) => {
   const new_value = {
     id: key,
     ...value
@@ -20,8 +21,7 @@ const data = Object.entries(GearData).map(([key, value]) => {
     max_hp: lastStage.hp,
     max_attack: lastStage.attack,
     max_defense: lastStage.defense,
-    skill_1: lastStage.skill_1.name,
-    skill_2: lastStage.skill_2.name,
+    max_total: lastStage.hp + lastStage.attack + lastStage.defense,
     rarity_str: firstStage.rarity + "☆"
   };
 
@@ -37,6 +37,7 @@ const getAttributeLookups = () => {
 };
 
 const columns = [
+  { title: "ID", field: "id", type: "numeric" },
   {
     title: "Character",
     field: "char_name",
@@ -49,26 +50,47 @@ const columns = [
     lookup: { "3☆": "3☆", "4☆": "4☆", "5☆": "5☆" }
   },
   { title: "Attribute", field: "attribute", lookup: getAttributeLookups() },
-  { title: "Max. HP", field: "helpers.max_hp", filtering: false },
-  { title: "Max. Attack", field: "helpers.max_attack", filtering: false },
-  { title: "Max. Defense", field: "helpers.max_defense", filtering: false },
-  { title: "Skill #1", field: "helpers.skill_1", sorting: false },
-  { title: "Skill #2", field: "helpers.skill_2", sorting: false }
+  {
+    title: "Max. HP",
+    field: "helpers.max_hp",
+    filtering: false,
+    type: "numeric"
+  },
+  {
+    title: "Max. Attack",
+    field: "helpers.max_attack",
+    filtering: false,
+    type: "numeric"
+  },
+  {
+    title: "Max. Defense",
+    field: "helpers.max_defense",
+    filtering: false,
+    type: "numeric"
+  },
+  {
+    title: "Max. Stat Total",
+    field: "helpers.max_total",
+    type: "numeric",
+    filtering: false
+  }
 ];
 
 const CardTable = () => {
   return (
     <MaterialTable
       columns={columns}
-      data={data}
-      title="XDU Playable Units"
+      data={tableData}
+      title="XDU Global Playable Units"
       options={{
         padding: "dense",
-        pageSize: 100,
-        pageSizeOptions: [100, 250, 500, 1000],
+        pageSize: 25,
+        pageSizeOptions: [25, 50, 100, 250, 500],
         search: false,
         filtering: true
       }}
+      detailPanel={rowData => <CardDetail data={rowData} />}
+      onRowClick={(event, rowData, togglePanel) => togglePanel()}
     />
   );
 };
