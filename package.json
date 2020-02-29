@@ -1,7 +1,7 @@
 {
   "name": "xdu-toolbox",
   "version": "0.1.0",
-  "homepage": "https://argoneuscze.github.io/xdutoolbox",
+  "homepage": "https://argoneuscze.github.io/xdu-toolbox",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.4",

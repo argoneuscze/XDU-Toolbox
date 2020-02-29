@@ -2,8 +2,6 @@ import React from "react";
 import { TableRow, TableCell } from "@material-ui/core";
 
 const CardDetailStageRow = ({ data }) => {
-  console.log(data);
-
   return (
     <TableRow>
       <TableCell component="th" scope="row">
